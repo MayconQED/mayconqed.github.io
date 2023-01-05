@@ -1,15 +1,14 @@
 html {
     line-height: 1.2;
-    letter-spacing: .06em;
     scroll-behavior: smooth;
     cursor: url(assets/main.png), pointer;
     font-family: trebuchet ms,Verdana,verdana ref,segoe ui,Candara,lucida grande,lucida sans unicode,lucida sans,Tahoma,sans-serif;
     background-color: #161617;
 }
 
-.index {
+#index {
     color: #EBE6E3;
-    font-size: 1.4em;
+    font-size: 24px;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -32,7 +31,7 @@ html {
 
     text-align: center;
     line-height: normal;
-    font-size: .9em;
+    font-size: 20px;
     font-style: italic;
     opacity: .5;
 }
@@ -42,7 +41,6 @@ html {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: 1.2em;
 }
 
 abbr {
@@ -97,12 +95,12 @@ a:active {
     left: 0;
  }
 
-.about {
+#about {
     color: #EBE6E3;
     font-size: 1.4em;
 
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -112,15 +110,22 @@ a:active {
     text-align: left;
 }
 
-.about-par {
+#about-par {
     display: block;
     text-align: justify;
-    font-size: 156x;
+    font-size: 1em;
     text-indent: 1em;
 }
 
 strong {
     color: #D2738A;
+}
+
+#renge-box {
+    width: 40%;
+    height: 40%;
+    padding-bottom: 1.2em;
+    border-radius: 50%;
 }
 
 .home-button {
@@ -129,67 +134,195 @@ strong {
     left: 50%;
     transform: translate(-50%, -50%);
     
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bolder;
-    border-radius: 5px;
+    border-radius: 6px;
     border-color: #D2738A;
     background: #D2738A;
-    color: #ffffff;
+    color: #EBE6E3;
 	cursor: pointer;
-    outline: none;
     padding: 3px 6px;
+}
+
+.home-button:active {
+    background-color: #a1596b;
+    border-color: #a1596b;
+    color: #b2afaf85;
+    font-size: 18px;
+
 }
 
 .comment-button {
     position: absolute;
-    top: 106%;
+    top: 100%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 65%);
     
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bolder;
-    border-radius: 5px;
+    border-radius: 6px;
     border-color: #D2738A;
     background: #D2738A;
-    color: #ffffff;
+    color: #EBE6E3;
 	cursor: pointer;
-    outline: none;
     padding: 4px 6px;
 }
 
-img {
-    width: 317px;
-    height: 317px;
-    padding-top: 0.5em;
-    padding-bottom: 1.5em;
-    border-radius: 50%;
+.comment-button:active {
+    background-color: #a1596b;
+    border-color: #a1596b;
+    color: #b2afaf85;
+    font-size: 18px;
 }
 
-.books-home {
+#books-home {
     padding-left: 1em;
     color: #EBE6E3;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
-.books-subtitle {
+#books-subtitle {
     color: #018574;
     font-size: medium;
 }
 
-.books-home-button {
+#books-home-button {
     position: absolute;
     top: 90%;
-    font-size: 20px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 24px;
     font-weight: bolder;
     border-radius: 5px;
-    border-color: #ff4070;
-    background: #ff4070;
-    color: #ffffff;
+    border-color: #D2738A;
+    background: #D2738A;
+    color: #EBE6E3;
 	cursor: pointer;
     padding: 3px 6px;
 }
 
-.books-nav {
-    color: #ff4070;
+#books-home-button:active {
+    background-color: #a1596b;
+    border-color: #a1596b;
+    color: #9a9795;
+}
+
+#books-nav {
+    color: #D2738A;
     font-weight: bolder;
+}
+
+@media (max-width: 425px) {
+    #index {
+        font-size: 1.5em;
+    }
+
+    #about {
+        width: 75vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        }
+    
+    #about-title {
+        font-size: 1.5em;
+    }
+
+    #about-par {
+        font-size: .7em;
+    }
+
+    #renge-box {
+        width: 70%;
+        height: 70%;
+        padding: 16px;
+    }
+
+    .home-button {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+    }
+
+    .comment-button {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+    }
+
+    #books-subtitle {
+        font-size: .7em;
+    }
+
+    #books-home-button {
+        font-size: 16px;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 375px) {
+    #index {
+        font-size: 1em;
+    }
+
+    #home-subtitle {
+        font-size: 15px;
+    }
+
+    #about {
+        width: 75vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        }
+
+    #about-title {
+        font-size: 1em;
+    }
+
+    #about-par {
+        font-size: 0.5em;
+    }
+
+    #renge-box {
+        width: 70%;
+        height: 70%;
+        padding: 16px;
+    }
+
+    .home-button {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+    }
+
+    .comment-button {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+    }
+
+    #books-home {
+        font-size: .9em;
+    }
+    
+
+    #books-subtitle {
+        font-size: .7em;
+    }
+
+    #books-home-button {
+        font-size: 16px;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
