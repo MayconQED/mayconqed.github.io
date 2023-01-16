@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/sci/ Haruhi Problem</title>
+    <link rel="shortcut icon" href="../assets/favicon/haruhi.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="postscss.css">
+</head>
+<body id="post01">
+    <main class="site-main thin">
+        <div class="post01-content">
+            <h1 id="post01-title"><a href="https://boards.4channel.org/sci/" target="_blank" rel="externaç">/sci/</a>O problema de Haruhi</h1>
+            <p id="post01-par">Em 2011, um usuário anônimo do 4chan publicou a seguinte imagem:</p>
+            <img src="../assets/haruhiproblem.jpg" alt="Haruhi Problem">
+            <blockquote>
+                <p>Qual o menor número de episódios de Haruhi que você teria de assistir para que todos os 14 episódios originais sejam vistos em todas as ordens possíveis?</p>
+            </blockquote>
+            <p id="post01-par">Por conta da obra <a href="https://pt.wikipedia.org/wiki/Suzumiya_Haruhi_no_Y%C5%AButsu" target="_blank" rel="external">Suzumiya Haruhi no Yūutsu</a> ("A Melancolia de Haruhi Suzumiya") ter sido exibida fora de ordem cronológica acaba por se tornar o exemplo perfeito para o teorema.</p>
+            <p id="post01-par">O enunciado pode parecer confuso, mas vamos entender com um simples exemplo. Supondo que queremos assistir um dorama com n=3 episódios. As possíveis ordens para se assistir o dorama são seis:</p>
+            <ul>
+                <li><p>1, 2, 3</p></li>
+                <li><p>1, 3, 2</p></li>
+                <li><p>2, 3, 1</p></li>
+                <li><p>2, 1, 3</p></li>
+                <li><p>3, 1, 2</p></li>
+                <li><p>3, 2, 1</p></li>
+            </ul>
+            <p id="post01-par">Uma forma ingênua, porém não errada, para assistir os episódios em todas as ordens possíveis seria colocar todas as sequências uma ao lado da outra e assisti-las na seguinte ordem:
+            </p>
+            <p>1, 2, 3; 1, 3, 2; 2, 3, 1; 2, 1, 3; 3, 1, 2; 3, 2, 1;</p>
+            <p id="post01-par">Porém nessa ordem teríamos de assistir a 18 episódios em sequência com o risco de termos de assistir o mesmo episódio duas vezes seguidas. Mas é possível resolver esse problema assistindo um número mínimo de episódios utilizando esta seguinte sequência:</p>
+            <p>1, 2, 3, 1, 2, 1, 3, 2, 1</p>
+            <p id="post01-par">Todas as permutações estão contidas na sequência anterior, basta comparar cada uma das seis permutações com a sequência final.</p>
+            <p id="post01-par">Assim, ao invés de assistir 18 episódios, precisamos assistir apenas 9. Com esse exemplo dá pra se ter uma ideia do que é a superpermutação.</p>
+            <p id="post01-par">O <a href="http://4watch.org/superstring/" target="_blank" rel="external">4chan</a> entra na história depois de um usuário postar a imagem do problema e iniciando a discussão. Ao final, foi demonstrado que a menor sequência que satisfaz a propriedade descrita pela questão da imagem deve ter, no mínimo, comprimento n!+(n-1)!+(n-2)!+n-3 (para n &ge; 2).
+            </p>
+            <p id="post01-par">No caso do anime, A Melancolia de Haruhi Suzumiya, seriam necessários assistir no mínimo 93.884.313.611 (93 bilhões, 884 millhões, 313 mil e 611) episódios para que todas as ordens possíveis fossem assistidas. Aproximadamente 4,3 milhões de anos. :)</p>
+            <img src="../assets/haruhi.jpg" alt="Haruhi">
+            <p id="post01-par"><abbr title="A responsável pelo problemão ^-^"><a href="https://mathsci.fandom.com/wiki/The_Haruhi_Problem" target="_blank" rel="external" >A prova dos cálculos está aqui.</a></abbr></p>
+        </div>
+    </main>
+</body>
+</html>
