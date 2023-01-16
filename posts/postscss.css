@@ -117,3 +117,43 @@ a:active {
     background-color: #7391d2 !important;
     color: #fff !important;
 }
+
+@media (max-width: 768px) {
+    .thin {
+        max-width: 650px;
+    }
+
+    #post01-par {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .thin {
+        max-width: 370px;
+    }
+
+    #post01-par {
+        font-size: 12px;
+    }
+
+    blockquote {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .thin {
+        max-width: 325px;
+    }
+
+    #post01-par {
+        font-size: 12px;
+    }
+
+    blockquote {
+        font-size: 10px;
+    }
+}
+
+
