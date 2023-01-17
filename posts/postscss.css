@@ -9,9 +9,9 @@
     --color-background: #161617;
     --color-font: #fff;
     --color-a: #fff;
-    --color-a-hover: #D2738A;
+    --color-a-hover: #F1CA2B;
     --color-a-active: #4c4748;
-    --color-mark: #D2738A;
+    --color-mark: #3A96C2;
 }
 
 * {
@@ -76,6 +76,14 @@ blockquote {
     margin-left: 1.8em;
 }
 
+li {
+    padding-bottom: 2px;
+}
+
+strong {
+    color: #3A96C2;
+}
+
 a, a:visited {
     color: var(--color-a);
     text-decoration: none;
@@ -97,25 +105,31 @@ a:active {
 
 ::-webkit-scrollbar {
     width: 8px;
-    border-radius: 5px;
   }
   
 ::-webkit-scrollbar-track {
-    background: #6d778a;
+    background: #262628;
   }
   
 ::-webkit-scrollbar-thumb {
-    background: #333c4c;
+    background: #F1CA2B;
+    border-radius: 16px;
   }
   
-  
 ::-webkit-scrollbar-thumb:hover {
-    background: #3B4252;
+    background: #39393c;
 }
 
 ::selection {
     background-color: #7391d2 !important;
     color: #fff !important;
+}
+
+#post-top {
+    font-size: 35px;
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
 }
 
 @media (max-width: 768px) {
@@ -125,6 +139,10 @@ a:active {
 
     #post01-par {
         font-size: 12px;
+    }
+
+    #post-top {
+        display: none;
     }
 }
 
@@ -140,6 +158,10 @@ a:active {
     blockquote {
         font-size: 12px;
     }
+
+    #post-top {
+        display: none;
+    }
 }
 
 @media (max-width: 375px) {
@@ -153,6 +175,36 @@ a:active {
 
     blockquote {
         font-size: 10px;
+    }
+
+    #post-top {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .thin {
+        max-width: 290px;
+    }
+
+    #post01-title {
+        font-size: 26px;
+    }
+
+    #post-nav {
+        font-size: 12px;
+    }
+
+    #post01-par {
+        font-size: 12px;
+    }
+
+    blockquote {
+        font-size: 10px;
+    }
+
+    #post-top {
+        display: none;
     }
 }
 
