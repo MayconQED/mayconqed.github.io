@@ -27,7 +27,7 @@
     margin: auto;
 }
 
-#post01 {
+#post01-page {
     color: var(--color-font);
     background-color: var(--color-background);
     animation: fadeIn .5s;
@@ -112,7 +112,7 @@ a:active {
   }
   
 ::-webkit-scrollbar-thumb {
-    background: #F1CA2B;
+    background: #404041;
     border-radius: 16px;
   }
   
@@ -134,7 +134,7 @@ a:active {
 
 @media (max-width: 768px) {
     .thin {
-        max-width: 650px;
+        max-width: 720px;
     }
 
     #post01-par {
