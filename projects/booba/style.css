@@ -1,0 +1,140 @@
+:root {
+    cursor: url(assets/cursor/main.png) 0 0, auto;
+    --color-background: #161617;
+    --color-font: #fff;
+    --color-a: #fff;
+    --color-a-hover: #D2738A;
+    --color-a-active: #4c4748;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--color-font);
+    padding-top: 100px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--color-font);
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+hr {
+    border: .1px solid rgb(255, 255, 255);
+    opacity: 5%;
+    margin: 2px 50px;
+}
+
+#post-nav {
+    text-align: center;
+}
+
+#post-nav-top {
+    text-align: center;
+    padding: 50px 0;
+}
+
+a, a:visited {
+    color: var(--color-a);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: .4s;
+    transition-timing-function: ease-out;
+    padding: 0.2em;
+}
+
+a:hover {
+    color: var(--color-a-hover);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--color-a-active);
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #333c4c;
+    border-radius: 15px;
+  }
+  
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #3B4252;
+}
+
+.container {
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 450px;
+    margin: 20px 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.box img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.box #zoom-in img {
+    transition: .5s ease-in-out;
+}
+
+.box #zoom-in:hover img {
+    transform: scale(1.5);
+}
+
+#disqus_thread {
+    padding-top: 98px;
+    margin: 0 150px;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+
+    .box img {
+        padding: 4px 0;
+    }
+
+    #disqus_thread {
+        padding-top: 100px;
+        margin: 0 100px;
+    }
+}
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    .box img {
+        padding: 4px 0;
+    }
+
+    #disqus_thread {
+        padding-top: 100px;
+        margin: 0 50px;
+    }
+ }

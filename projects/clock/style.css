@@ -1,3 +1,8 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +19,7 @@ body {
     justify-content: center;
     height: 100vh;
     filter: none;
+    animation: fadeIn 1s;
 }
 
 .day{

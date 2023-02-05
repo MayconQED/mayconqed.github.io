@@ -7,8 +7,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     cursor: url(assets/cursor/main.png) 0 0, auto;
     --color-background: #161617;
-    --color-font: #fff;
-    --color-a: #fff;
+    --color-w: #fff;
     --color-a-hover: #D2738A;
     --color-a-active: #4c4748;
     --color-mark: #D2738A;
@@ -23,7 +22,7 @@
 }
 
 #home-page {
-    color: var(--color-font);
+    color: var(--color-w);
     background-color: var(--color-background);
     height: 100vh;
     display: flex;
@@ -33,7 +32,7 @@
 }
 
 #home-center {
-    color: var(--color-font);
+    color: var(--color-w);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +70,7 @@
 }
 
 a, a:visited {
-    color: var(--color-a);
+    color: var(--color-w);
     text-decoration: none;
     transition-property: color;
     transition-duration: .4s;
@@ -107,15 +106,10 @@ a:active {
     background: #3B4252;
 }
 
-::selection {
-    background-color: #7391d2 !important;
-    color: #fff !important;
-}
-
 /*About*/
 
 #about-page {
-    color: var(--color-font);
+    color: var(--color-w);
     background-color: var(--color-background);
     animation: fadeIn .5s;
     display: flex;
@@ -166,7 +160,7 @@ mark {
 /*Posts*/
 
 #post-page {
-    color: var(--color-font);
+    color: var(--color-w);
     background-color: var(--color-background);
     animation: fadeIn .5s;
     display: flex;
