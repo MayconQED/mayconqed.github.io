@@ -90,13 +90,8 @@ a {
     padding: 0.2em;
 }
 
-a:hover {
+a:hover, a:active {
     color: #D2738A;
-    text-decoration: none;
-}
-
-a:active {
-    color: #4c4748;
     text-decoration: none;
 }
 

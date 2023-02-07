@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>New tab</title>
+  <title>New Tab</title>
   <style>
     html {
       color: #fff;
       background-color: #121420;
-      align-items: center;
       display: flex;
+      align-items: center;
+      justify-content: center;
       font: 22px "Courier New", Courier, monospace;
       height: 100%;
-      justify-content: center;
       margin: 0;
     }
 
-    body {
+    main {
       display: flex;
-      margin: 1em;
-      padding: 1em;
+      margin: 2rem;
+      padding: 2rem;
     }
 
     h1 {
-      font-size: 1.5em;
+      font-size: 1.5rem;
       grid-column: 1 / -1;
       margin: 0;
       text-align: center;
@@ -39,11 +39,11 @@
 
     nav {
       display: grid;
-      grid-row-gap: 1em;
+      grid-row-gap: 1rem;
       grid-template-columns: 1fr 1fr;
-      margin: 0 1em;
-      min-width: 24em;
-      padding: 1em 0;
+      margin: 0 1rem;
+      min-width: 24rem;
+      padding: 1rem 0;
     }
 
     ul {
@@ -55,36 +55,44 @@
 
     li:first-child {
       font-weight: bold;
-      line-height: 2em;
+      line-height: 2rem;
     }
 
     img {
-      border: 4px solid #7e7e7e;
+      border: 2px solid #7e7e7e;
       height: auto;
       object-fit: cover;
       object-position: 50% 100%;
-      width: 14em;
+      width: 12rem;
+    }
+
+    #clock-date {
+      color: #999999;
+      font-size: .9rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <h1>Bookmarks</h1>
-    <ul>
-      <li>General</li>
-      <li><a href="https://mail.google.com/">/Email/</a></li>
-      <li><a href="https://proapp.prodigioeducacao.com/">/ProMil/</a></li>
-      <li><a href="https://github.io">/GitHub</a></li>
-      <li><a href="https://4chan.org/">/4chan/</a></li>
-    </ul>
-    <ul>
-      <li>4fun</li>
-      <li><a href="https://youtube.com">/YouTube/</a></li>
-      <li><a href="https://betteranime.net">/BetterAnime/</a></li>
-      <li><a href="https://primitiveofx.github.io/">/Site/</a></li>
-      <li><a href="https://primitiveofx.github.io/projects/b/">/b/</a></li>
-    </ul>
-  </nav>
-  <img src="https://i.ibb.co/VYvH0gR/kiki.jpg">
+  <main>
+    <nav>
+      <h1>Bookmarks</h1>
+      <ul>
+        <li>General</li>
+        <li><a href="https://mail.google.com/">/Email/</a></li>
+        <li><a href="https://github.io">/GitHub/</a></li>
+      </ul>
+      <ul>
+        <li>4fun</li>
+        <li><a href="https://youtube.com">/YouTube/</a></li>
+        <li><a href="https://betteranime.net">/BetterAnime/</a></li>
+      </ul>
+    </nav>
+    <img src="https://i.ibb.co/VYvH0gR/kiki.jpg">
+  </main>
+  <div id="clock-date"></div>
+  <script src="script.js"></script>
 </body>
 </html>
