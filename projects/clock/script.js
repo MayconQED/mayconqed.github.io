@@ -9,7 +9,7 @@ setInterval(function() {
     const d = time.getDate()
     const m = (time.getMonth() + 1)
     const y = time.getFullYear()
-    clock.innerHTML = `${hr}:${min.toString().padStart(2, 0)}:${s.toString().padStart(2, 0)}`
+    clock.innerHTML = `${hr.toString().padStart(2, 0)}:${min.toString().padStart(2, 0)}:${s.toString().padStart(2, 0)}`
     date.innerHTML = `${d.toString().padStart(2, 0)}日 ${m.toString().padStart(2, 0)}月 ${y.toString()}年`
     if(hr >= 5 && hr < 16){
         background.classList.remove('afternoon', 'night')
