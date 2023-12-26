@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Tab</title>
+  <style>
+    @font-face {
+      font-family: KH-Dot-Hibiya;
+      src: url(font/KH-Dot-Hibiya-24.ttf);
+    }
+
+    html {
+      color: #fff;
+      /*modifique caso não queira esse wallpaper*/
+      background-color: #76B8E5;
+      /*background: linear-gradient(90deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(xxx);
+      background-repeat: no-repeat;
+      background-size: cover;*/
+      cursor: url(cursor/cursor.cur), auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font: 16px KH-Dot-Hibiya;
+      height: 100%;
+      margin: 0;
+    }
+
+    main {
+      display: flex;
+      margin: 2rem;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: normal;
+      grid-column: 1 / -1;
+      margin: 0;
+      text-align: center;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-size: 1rem;
+      cursor: url(cursor/cursor.cur), auto;
+      line-height: 1.1rem;
+    }
+
+    a:focus,
+    a:hover {
+      color: #003e81;
+      text-decoration: underline;
+    }
+
+    nav {
+      display: grid;
+      grid-row-gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 1rem;
+      min-width: 24rem;
+      padding: 2rem 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
+
+    li:first-child {
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+
+    img {
+      border: 1px solid #fff;
+      height: auto;
+      object-fit: cover;
+      object-position: 50% 100%;
+      width: 14rem;
+    }
+
+    #clock-date {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <h1>ようこそ</h1>
+      <ul>
+        <li>General</li>
+        <li><a href="https://mail.google.com/mail/u/0/#inbox">Email</a></li>
+        <li><a href="https://drive.google.com/">Drive</a></li>
+        <li><a href="https://github.com/primitiveofx">GitHub</a></li>
+        <li><a href="https://primitiveofx.github.io/">Blog</a></li>
+      </ul>
+      <ul>
+        <li>Fun</li>
+        <li><a href="https://youtube.com">YouTube</a></li>
+        <li><a href="http://radio.garden/visit/ashiya/ybI7Mao4">Radio Garden</a></li>
+      </ul>
+    </nav>
+    <abbr title="♥"><img src="cosy.jpg"></abbr>
+  </main>
+  <div id="clock-date"></div>
+  <script src="script.js"></script>
+</body>
+</html>

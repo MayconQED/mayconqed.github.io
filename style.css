@@ -1,0 +1,525 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+:root {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: url(assets/cursor/main.png) 0 0, auto;
+    --background-color: #11191f;
+    --font-color: #fff;
+    --font2-color: hsl(205, 16%, 77%);
+    --a-hover-color: #CF3F64;
+    --a-active-color: hsl(0, 1%, 30%);
+    --mark-color: #CF3F64;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    letter-spacing: 0;
+    scroll-behavior: smooth;
+}
+
+#home-page {
+    background-color: var(--background-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn .5s;
+}
+
+#home-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home-title {
+    color: var(--font-color);
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+#home-subtitle {
+    color: var(--font2-color);
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: .2em;
+    padding-bottom: .4em;
+}
+
+#home-nav {
+    color: var(--font-color);
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.site-footer {
+    color: var(--font2-color);
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    height: 38px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+a, a:visited {
+    color: var(--font-color);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: .4s;
+    transition-timing-function: ease-out;
+    padding: 0.2em;
+}
+
+a:hover {
+    color: var(--a-hover-color);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--a-active-color);
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 5px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #6d778a;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #333c4c;
+  }
+  
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #3B4252;
+}
+
+/*About*/
+
+#about-page {
+    background-color: var(--background-color);
+    animation: fadeIn .5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 6em;
+}
+
+#about-title {
+    color: var(--font-color);
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 1rem 0;
+}
+
+.about-par {
+    color: var(--font2-color);
+    display: block;
+    text-align: justify;
+    font-size: 18px;
+    padding-bottom: .7rem;
+    max-width: 720px;
+}
+
+#about-par-pad {
+    padding-bottom: 2rem;
+}
+
+abbr {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/*mark {
+    font-weight: bolder;
+    background-color: unset;
+    color: var(--mark-color);
+}*/
+
+#about-nav {
+    font-size: 1rem;
+    padding: 2px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*Posts*/
+
+#post-page {
+    color: var(--font-color);
+    background-color: var(--background-color);
+    animation: fadeIn .5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+#post-content {
+    max-width: 720px;
+}
+
+#post-title {
+    font-size: 2rem;
+    text-align: left;
+    padding-bottom: 1.7rem;
+}
+
+#post-subtitle {
+    display: block;
+    text-align: justify;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+hr {
+    opacity: .3;
+}
+
+#post-nav {
+    font-size: 1rem;
+    padding: 6px 0;
+    text-align: left;
+}
+
+.posts-group {
+    display: flex;
+    margin-bottom: 1.9em;
+    padding-top: .7rem;
+    line-height: normal;
+}
+
+.posts-group .post-year {
+    padding-top: 6px;
+    margin-right: 1.8em;
+    font-size: 1.6em;
+    opacity: .6;
+}
+
+.posts-group .post-links {
+    border-bottom: 1px #7d828a dashed;
+    padding-bottom: 6px;
+}
+
+.posts-group .post-links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0;
+}
+
+.post-title {
+    max-width: 720px;
+    text-align: justify;
+}
+
+.post-links {
+    padding: 0;
+    list-style: none;
+}
+
+.posts-group .post-day {
+    flex-shrink: 0;
+    margin-left: 1em;
+    opacity: .6;
+}
+
+ul {
+    display: block;
+    margin-block-start: 1rem;
+}
+
+li {
+    margin: 0 0 20px;
+}
+
+/*Projects*/
+
+#project-page {
+    color: var(--font-color);
+    background-color: var(--background-color);
+    animation: fadeIn .5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 6em;
+}
+
+#project-title {
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 1rem 0;
+}
+
+#project-subtitle {
+    display: block;
+    text-align: justify;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+#project-content {
+    max-width: 720px;
+}
+
+hr {
+    opacity: .3;
+}
+
+#project-nav {
+    font-size: 1rem;
+    padding: 6px 0;
+    text-align: left;
+}
+
+.container{
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 250px;
+    margin: 20px 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box-subtitle {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box #zoom-in img {
+    transition: .5s ease-in-out; 
+}
+
+.box #zoom-in:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+/*Uepá*/
+
+@media (max-width: 768px) {
+    #home-subtitle {
+        padding: 3px 0;
+    }
+    
+    .site-footer {
+        font-size: 12px;
+    }
+
+    .about-par {
+        font-size: 16px;
+        max-width: 670px;
+    }
+
+    #posts-content {
+        font-size: 16px;
+        max-width: 720px;
+    }
+
+    .posts-group {
+        display: block;
+        text-align: left;
+    }
+}
+
+@media (max-width: 750px) {
+    .site-footer {
+        font-size: 12px;
+    }
+    
+    .about-par {
+        font-size: 16px;
+        max-width: 670px;
+    }
+
+    #posts-content {
+        font-size: 16px;
+        max-width: 620px;
+    }
+
+    .posts-group {
+        display: block;
+        text-align: left;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    #home-title {
+        font-size: 2.7em;
+    }
+
+    #home-subtitle {
+        font-size: 1em;
+        padding: 3px 0;
+    }
+
+    #home-nav {
+        font-size: 1.7rem;
+    }
+    
+    .about-par {
+        font-size: 12px;
+        max-width: 500px;
+    }
+
+    #posts-content {
+        font-size: 16px;
+        max-width: 570px;
+    }
+}
+
+@media (max-width: 481px) {
+    .about-par {
+        font-size: 12px;
+        max-width: 390px;
+    }
+
+    #posts-content {
+        font-size: 16px;
+        max-width: 460px;
+    }
+}
+
+@media (max-width: 425px) {
+    #home-title {
+        font-size: 2em;
+    }
+
+    #home-subtitle {
+        font-size: .7em;
+        padding: 3px 0;
+    }
+
+    #home-nav {
+        font-size: 1.3rem;
+    }
+    
+    .site-footer {
+        font-size: 12px;
+    }
+    
+    #about-title {
+        font-size: 2em;
+    }
+    
+    .about-par {
+        font-size: 12px;
+        max-width: 320px;
+    }
+
+    #post-title {
+        padding: 12px;
+    }
+
+    #post-subtitle {
+        font-size: 12px;
+    }
+
+    .post-title {
+        font-size: 12px;
+    }
+
+    #posts-content {
+        font-size: 16px;
+        max-width: 400px;
+    }
+}
+
+@media (max-width:375px) {
+    #home-title {
+        font-size: 2em;
+    }
+
+    #home-subtitle {
+        font-size: .7em;
+        padding: 3px 0;
+    }
+
+    #home-nav {
+        font-size: 1.3rem;
+    }
+
+    .site-footer {
+        font-size: 12px;
+    }
+
+    #posts-content {
+        font-size: 16px;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 320px) {
+    #home-subtitle {
+        font-size: .7em;
+        padding: 3px 0;
+    }
+
+    #home-nav {
+        font-size: 1.3rem;
+    }
+
+    .site-footer {
+        font-size: 12px;
+    }
+
+    #about-title {
+        font-size: 2em;
+    }
+
+    .about-par {
+        font-size: 12px;
+        max-width: 270px;
+    }
+
+    #post-nav {
+        font-size: 12px;
+    }
+
+    #post-subtitle {
+        font-size: 12px;
+    }
+
+    #posts-content {
+        font-size: 12px;
+        max-width: 300px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
